@@ -11,8 +11,9 @@ function App() {
     <BrowserRouter basename="/e-commerce">
     <Routes>
       <Route exact path="/" element={<Home/>} />
-      <Route path="/about" element={<About/>} />
-      <Route path="/portfolio" element={<Portfolio/>} />
+     
+      <Route exact  path="/about" element={<About/>} />
+      <Route exact path="/portfolio" element={<Portfolio/>} />
     </Routes>
  </BrowserRouter>
   )
