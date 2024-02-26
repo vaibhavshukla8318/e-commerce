@@ -1,16 +1,18 @@
 import React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './component/Home';
 import Portfolio from './component/Portfolio';
 import About from './component/About';
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/portfolio" element={<Portfolio />} />
-    </Routes>
+    <BrowserRouter  basename="/e-commerce">
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/about" element={<About />} />
+        <Route exact path="/portfolio" element={<Portfolio />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
