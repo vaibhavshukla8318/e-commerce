@@ -7,7 +7,7 @@ import About from './component/About';
 
 function App() {
   return (
-    <BrowserRouter  basename="/e-commerce">
+    <BrowserRouter  basename="/homeopathy_website">
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/about" element={<About />} />
