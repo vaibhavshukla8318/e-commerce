@@ -1,0 +1,144 @@
+.contact{
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  background-color: #657647;
+}
+.contactImage{
+  position: absolute;
+  background: url("../image/sectionFirstImage.png");
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(50%);
+}
+.contactDetails{
+  position: absolute;
+  display: flex;
+  /* flex-direction: column; */
+  padding: 130px 50px;
+  height: 100%;
+  width: 100%;
+  color: #fff;
+}
+.formContainer{
+  width: 60%;
+  z-index: 2;
+}
+.formContainer h3{
+ font-style: italic;
+ font-size: 1.5rem;
+ white-space: nowrap;
+ margin-bottom: 30px;
+}
+textarea{
+  height: 35vh;
+  width: 50vw;
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 30px;
+  font-size: 1.2rem;
+  opacity: 0.7;
+  background-color: black;
+  transition: all 0.5s ease-in-out;
+}
+textarea:hover{
+  opacity: 1;
+  background-color: #fff;
+}
+textarea:focus{
+  outline: none;
+}
+form{
+  display: flex;
+  flex-direction: column;
+}
+
+form div{
+   display: flex;
+   gap: 35px;
+   margin: 20px 0;
+}
+form>input{
+  max-width: 50vw;
+  height:45px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.2rem;
+  padding: 15px;
+}
+form div input{
+  width: 23.6vw;
+  height:45px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.2rem;
+  padding: 15px;
+}
+form input:focus{
+  outline: none;
+}
+
+.contactInfo{
+  width: calc(100% - 60%);
+  display: flex;
+  flex-direction: column;
+  padding-top: 45px;
+  padding-left: 40px;
+  /* gap: 30px; */
+}
+.contactInfo>div{
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  text-align: justify;
+  gap: 10px;
+  /* border: 1px solid red; */
+}
+.contactInfo div img{
+  height: 35px;
+  width: 35px;
+}
+.contactInfo div div{
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  flex-direction: column;
+  gap:10px;
+  padding-top: 30px;
+}
+.contactInfo div div p{
+  color: rgb(224, 210, 210);
+}
+
+@media(max-width:700px){
+  .contact{
+    overflow-y: auto;
+    overflow-x: hidden;
+  
+  }
+  .contactDetails{
+    padding: 130px 10px;
+    flex-direction: column;
+  }
+  .formContainer{
+    width: 100%;
+  }
+  .contactInfo{
+    width: 100%;
+    padding-bottom: 50px;
+  }
+  textarea{
+    width: 100%;
+  }
+  form div{
+    flex-direction: column;
+    width: 100%;
+  }
+   input{
+    min-width: 100%;
+  }
+}

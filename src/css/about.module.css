@@ -1,0 +1,91 @@
+/* About.module.css */
+
+.aboutContainer {
+  max-width: 100vw;
+  height: 100%;
+  padding-top: 15vh;
+  background-color: #FFFFE4;
+}
+section{
+  min-height: 380px;
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 30px 40px;
+}
+.secondSection{
+  align-items: flex-end;
+  background-color:  rgb(61, 189, 96);
+  color: #fff;
+}
+.fourthSection{
+  display: flex;
+  align-items: center;
+  /* text-align: center; */
+  background-color:  rgb(61, 189, 96);
+}
+
+.aboutContainer section p,
+.aboutContainer section ul{
+  width: 55%;
+  text-align: justify;
+  color: #686868;
+
+}
+
+.firstSection h2,  .thirdSection h2{
+  margin-bottom: 30px;
+  color: #E67700;
+  font-style: italic;
+}
+.secondSection h2{
+  margin-bottom: 30px;
+  color: #E9C909;
+  font-style: italic;
+  width: 56%;
+}
+.fourthSection h2{
+  margin-bottom: 30px;
+  color: #E9C909;
+  font-style: italic;
+}
+ .secondSection ul li, .fourthSection ul li{
+  color: #fff;
+}
+
+ul{
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+li span {
+  display: inline-block;
+  white-space: nowrap;
+  color: rgb(255, 166, 0);
+}
+
+
+.contactInfo p{
+  display: flex;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+a{
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+a:hover{
+  color: red;
+}
+
+@media(max-width:768px){
+  .aboutContainer section p,
+  .aboutContainer section h2,
+  .aboutContainer section ul{
+    text-align: center;
+    width: 100%;
+  }
+}
