@@ -1,57 +1,19 @@
-/* Homepage.module.css
-.homepage {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.section {
-  margin-bottom: 30px;
-}
-
-.heading {
-  font-size: 24px;
-  font-weight: bold;
-  color: #333;
-}
-
-.paragraph {
-  font-size: 16px;
-  color: #666;
-  line-height: 1.5;
-}
-
-.list {
-  list-style-type: disc;
-  padding-left: 20px;
-}
-
-.summary {
-  font-style: italic;
-  margin-top: 20px;
-  color: #888;
-} */
-
 .homePage {
- height: 100vh;
+ /* max-height: calc(100vh- 15vh); */
+max-height: 100vh;
  width: 100vw;
- padding-top: 15vh;
+ margin-top: 15vh;
  background-color: #E9F9E7;
-
-/* background-color: ; */
+position: fixed;
+overflow-y: scroll;
 }
 
 
-.section{
-  height: 85vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 100px;
+.section1{
+  min-height: 50vh;
 }
-.section div{
-  height: 85vh;
+.section1 div{
+  min-height: 50%;
   width: 70%;
   display: flex;
   flex-direction: column;
@@ -60,19 +22,71 @@
   gap: 50px;
   text-align: justify;
 }
-.section h3{
+.section1 h3{
   color: green;
 }
-.section p{
+.section1 p{
   line-height: 1.7rem;
   color: darkgreen;
 }
 
+.section2{
+  min-height: calc(100vh - 50vh);
+  background-color:  rgb(61, 189, 96);
+}
+.section2 h2{
+  margin-bottom: 30px;
+  color: #E9C909;
+  font-style: italic;
+}
+
+.contactInfo{
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.contactInfo p{
+  /* display: flex; */
+  gap: 20px;
+  margin-bottom: 10px;
+}
+a{
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+a:hover{
+  color: red;
+}
+.copyright{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+@keyframes rotate360 {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.sanjeevaniCircle {
+  width: 12vw; /* Adjust size as needed */
+  height: 12vh; /* Adjust size as needed */
+  border-radius: 50%; /* Makes it a circle */
+  /* border: 2px solid black;  */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: rotate360 5s linear infinite; /* Adjust animation duration as needed */
+}
+
+.sanjeevaniText {
+  font-size: 1.2rem; /* Adjust font size as needed */
+  font-weight: bold;
+  color: rgb(207, 63, 147); /* Text color */
+}
+
 @media(max-width:500px){
-  .section{
-    padding-top: 40px;
-  }
-  .section div{
+  .section1 div{
     width: 100%;
   }
 }

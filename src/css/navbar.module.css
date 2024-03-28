@@ -1,5 +1,5 @@
 .navbar{
-  height: 15vh;
+  min-height: 15vh;
   width: 100vw;
   position: fixed;
   background-color: #fff;
@@ -10,11 +10,38 @@
   z-index: 3;
 }
 .navbar p{
+  max-width: 20vw;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.navbar p span{
+  min-width: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.7rem;
-  color:#657F64;
+  color:rgb(207, 63, 147);
+  overflow: hidden;
+  animation: move 8s forwards infinite;
+ white-space: nowrap;
+  
+}
+@keyframes move{
+  0%{
+      transform: translatex(0px);  
+  }
+  50%{
+      transform: translatex(-200px);
+  }
+  75%{
+    transform: translatex(200px);
+  }
+  100%{
+    transform: translatex(0px);
+  }
 }
 .rightContainer{
   display: flex;
@@ -32,8 +59,6 @@
   display: none;
   height: 40px;
   width: 40px;
-  background-color: red;
-  border-radius: 50%;
 }
 
 .link{
@@ -61,29 +86,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* text-align: left; */
 }
-
-.paraContainer div{
-  position: absolute;
-  height: 50px;
-  width: 0;
-  right: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: translatex(-50px);
-  border-bottom-right-radius: 20px;
-}
-
-.paraContainer p+div:hover,
-.paraContainer p:hover+div{
-  width: 250px;
-  background-color: #234821;
-  transition: all 0.5s ease-in-out;
-  color: red;
-}
-
 .paraContainer p{
   display: flex;
   justify-content: center;
@@ -91,61 +94,78 @@
   height: 50px;
   width: 250px;
   font-size: 1.2rem;
+  border-bottom-right-radius: 20px;
+  transition: all 0.5s ease-in-out;
   color: #fff;
   z-index: 2;
+  cursor: pointer;
 }
+.paraContainer p:hover{
+  width: 250px;
+  background-color: #234821;
+  color: yellow;
+
+}
+
 
 .displayNone{
   display: none;
 }
 
-@media(max-width:1180px){
+.timeSlot{
+  display: none;
+  max-height: 50vh;
+  width: fit-content;
+  position: absolute;
+  background-color: #fff;
+  padding:80px 30px 40px 30px;
+  display: flex;
+  flex-direction: column;
+  transform: translate(50px,150px);
+  overflow-y: auto;
+}
+.timeSlot ul li{
+  display: flex;
+  gap: 20px;
+}
+
+@media(max-width:1020px){
+  .navbar{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 50px;
+  }
+  .navbar p{
+    max-width: 35vw;
+  }
+}
+
+@media(max-width:780px){
+  .link{
+    height: fit-content;
+    width: fit-content;
+  }
+  .rightContainer span{
+    display: none;
+  }
+  .rightContainer div{
+    gap: 60px;
+  }
   .rightContainer img{
     display: block;
   }
-  .rightContainer div{
+  .paraContainer{
+    height:fit-content;
+    width:fit-content;
+    background-color: unset;
   }
-  .rightContainer>div{
-    display: unset;
-    padding: 50px 40px;
-    width: 90vw;
-    height: 100vh;
-    position: absolute;
-    background-color: gray;
-    left: 0;
-    top:100%;
-    color: #fff;
-    transition: all 0.5s ease-in-out;
+  .paraContainer p{
+    display: none;
   }
-  .paraContainer div{
-    /* position: absolute;
-    height: 50px;
-    width: 0; */
-    right: unset;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: translatex(0);
-    border-bottom-right-radius: 20px;
-  }
-  .link{
-    padding: 25px;
-    color: #fff;
-  }
-
 }
 @media(max-width:500px){
-  .navbar{
-    padding: 0 10px;
-  }
-  .navbar p{
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10vh;
-    width: 200px;
-    /* border: 1px solid red; */
-    margin-right: 30px;
+  .rightContainer div{
+    justify-content: space-between;
+    /* gap: 30px; */
   }
 }

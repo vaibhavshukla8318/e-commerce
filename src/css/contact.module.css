@@ -1,9 +1,10 @@
 .contact{
   position: fixed;
-  height: 100vh;
+  height: calc(100vh - 15vh);
   width: 100vw;
   align-items: center;
   background-color: #657647;
+  margin-top: 15vh;
 }
 .contactImage{
   position: absolute;
@@ -18,8 +19,7 @@
 .contactDetails{
   position: absolute;
   display: flex;
-  /* flex-direction: column; */
-  padding: 130px 50px;
+  padding: 30px 50px;
   height: 100%;
   width: 100%;
   color: #fff;
@@ -44,10 +44,12 @@ textarea{
   opacity: 0.7;
   background-color: black;
   transition: all 0.5s ease-in-out;
+  color: #fff;
 }
 textarea:hover{
   opacity: 1;
   background-color: #fff;
+  color: #000000;
 }
 textarea:focus{
   outline: none;
@@ -60,7 +62,7 @@ form{
 form div{
    display: flex;
    gap: 35px;
-   margin: 20px 0;
+   margin: 10px 0;
 }
 form>input{
   max-width: 50vw;
@@ -82,21 +84,30 @@ form input:focus{
   outline: none;
 }
 
+.submitButton{
+  max-width: 15vw!important;
+  background-color: cadetblue;
+  color: #fff;
+  margin-left: 8vw;
+  transition:all 0.4s ease-in-out;
+}
+.submitButton:hover{
+  background-color: red;
+}
+
 .contactInfo{
   width: calc(100% - 60%);
   display: flex;
   flex-direction: column;
   padding-top: 45px;
   padding-left: 40px;
-  /* gap: 30px; */
+  /* padding-bottom: 200px; */
 }
 .contactInfo>div{
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   text-align: justify;
   gap: 10px;
-  /* border: 1px solid red; */
 }
 .contactInfo div img{
   height: 35px;
@@ -104,8 +115,6 @@ form input:focus{
 }
 .contactInfo div div{
   display: flex;
-  /* justify-content: center;
-  align-items: center; */
   flex-direction: column;
   gap:10px;
   padding-top: 30px;
@@ -118,10 +127,9 @@ form input:focus{
   .contact{
     overflow-y: auto;
     overflow-x: hidden;
-  
   }
   .contactDetails{
-    padding: 130px 10px;
+    padding: 50px 10px;
     flex-direction: column;
   }
   .formContainer{
@@ -140,5 +148,8 @@ form input:focus{
   }
    input{
     min-width: 100%;
+  }
+  .submitButton{
+    margin-left: 0;
   }
 }

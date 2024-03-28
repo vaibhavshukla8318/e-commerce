@@ -1,22 +1,56 @@
-// About.js
-
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import styles from '../css/about.module.css'; // Importing CSS module
 import Navbar  from './Navbar';
+
+const Slider = ({ images }) => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      // Move to the next slide
+      setCurrentSlide((prevSlide) => (prevSlide + 1) % images.length);
+    }, 5000); // Change slide every 5 seconds
+
+    return () => clearInterval(interval); // Cleanup interval on unmount
+  }, [images.length]);
+    // Example usage:
+
+
+  return (
+    <div className="slider" style={{display:"flex", flexDirection:"row", width:"100vw", overflow:"auto"}}>
+      {images.map((image, index) => (
+        <div
+          key={index}
+          className={index === currentSlide ? 'slide active' : 'slide'}
+          style={{ backgroundImage: `url(${image})`, display:"flex", flexDirection:"row", minWidth:"100vw", minHeight:"50vh", backgroundPosition:"center", backgroundRepeat:"no-repeat", backgroundSize:"cover", flexWrap:"nowrap" }}
+        ></div>
+      ))}
+    </div>
+  );
+};
+
+  // Example usage:
+  const images = [
+    'https://www.ehmc.co.in/images/banner1.jpg',
+    'https://www.ehmc.co.in/images/banner2.jpg',
+    'https://www.ehmc.co.in/images/banner3.jpg',
+    // Add more image URLs as needed
+  ];
+
 
 const About = () => {
   return (
     <>
       <Navbar/>
       <div className={styles.aboutContainer}>
+        <Slider images={images}/>
         <section className={styles.firstSection}>
-          <h2 className={styles.aboutTitle}>About [Your Website Name]</h2>
+          <h2 className={styles.aboutTitle}>About Electrohomoeopathy</h2>
           <p className={styles.aboutText}>
           Electrohomoeopathy was devised by Count Cesare Mattei (1809–1896) in the latter part of the 19th Century. Mattei, a nobleman living in a castle in the vicinity of Bologna studied natural science, anatomy, physiology, pathology, Chemistry and botany. He ultimately focused on the supposed therapeutic power of electricity (Red, Blue,Green) in botanical extract.
           </p>
           <p className={styles.aboutText}>
           According to Mattei’s own ideas however, every, disease originates in the change of blood or of the lymphatic system or both and remadies can therefore be mainly divided into two broad categories groups to be used in response to the dominant affected system. Mattei wrote that having obtained plant extracts, he was able to determine in the liquid vegetable electricity.
-            {/* Add the rest of your about text here */}
           </p>
           <p>
           Electrohomoeopathy is a plant orientated system of herbal medicine. The Electrohomoeopathy remadies purity the lymph and blood system of the human body, with Electro – homoeopathy we can find and destroy the gravest disorders of the organism by purifing it , or we can help to prevent disease by keeping the body pure and respecting the Will of the creator.
@@ -48,9 +82,17 @@ const About = () => {
         </section>
         <section className={styles.fourthSection}>
           <div class={styles.contactInfo}>
-            <h2>Contact Info:</h2>
-            <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-            <p>Mobile: <a href="tel:+91 1234567890">+1234567890</a></p>
+            <div>
+              <h2>Contact Info:</h2>
+              <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+              <p>Mobile: <a href="tel:+91 1234567890">+1234567890</a></p>
+            </div>
+            <div className={styles.sanjeevaniCircle}>
+                <div className={styles.sanjeevaniText}>Sanjeevani</div>
+            </div>
+          </div>
+          <div>
+            Copyright © 2024 Sanjiv Shukla. All rights reserved.
           </div>
         </section>
       </div>

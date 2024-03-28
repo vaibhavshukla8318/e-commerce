@@ -5,3 +5,10 @@
   font-family: sans-serif;
   text-decoration: none;
 }
+
+@media (max-width:330px){
+  .app{
+     display: none;
+ }
+ }
+ 
