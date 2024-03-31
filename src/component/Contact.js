@@ -58,14 +58,14 @@ const Contact = () => {
             <div>
               <img src={phone}/>
               <div>
-                <a href='tel:+91 1234567890'>+1234567890</a>
+                <a href='tel:+91 9889038280'>+91 9889038280</a>
                 <p>Sat and Sun 12am to 4pm</p>
               </div>
             </div>
             <div>
               <img src={email}/>
               <div>
-                <a href='mailto:your.email@example.com'>your.email@example.com</a>
+                <a href='mailto:sanjivshukla000@gmail.com'>sanjivshukla000@gmail.com</a>
                 <p>Send us your query anytime!</p>
               </div>
             </div>

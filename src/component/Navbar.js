@@ -1,89 +1,12 @@
-
-
-// import React, { useState } from 'react';
-// import style from "../css/navbar.module.css";
-// import { Link } from 'react-router-dom';
-// import TimeSlot from './Form';
-// import MenuIcon from '../image/menu.png';
-// import Home from '../image/home.png';
-// import About from '../image/about.png';
-// import Services from '../image/services.png';
-// import Blog from '../image/blog.png';
-// import Contact from '../image/contact.png';
-// import Appointment from '../image/appointment.png';
-
-// const Navbar = () => {
-//   const [showLinks, setShowLinks] = useState(true);
-
-//   const handleMenuClick = () => {
-//     setShowLinks(!showLinks);
-//   };
-
-//   return (
-//     <div className={style.navbar}>
-//       <Link to="/" className={style.pageLink}>
-//         <p>
-//           <span>Aarogya Sanjeevani Clinic</span>
-//         </p>
-//       </Link>
-//       <div className={style.rightContainer}>
-       
-//         {showLinks && (
-//           <div className={style.displayNone}>
-//             <Link to='/' className={style.link}>
-//               <span>Home</span>
-//               <img src={Home} alt='home'/>
-//             </Link>
-//             <Link to='/about' className={style.link}>
-//               <span>About</span>
-//               <img src={About} alt='about'/>
-//             </Link>
-//             {/* <Link to='/services' className={style.link}>
-//               <span>Services</span>
-//               <img src={Services} alt='services'/>
-//             </Link> */}
-//             <Link to='/blog' className={style.link}>
-//               <span>Blog</span>
-//               <img src={Blog} alt='blog'/>
-//             </Link>
-//             <Link to='/contact' className={style.link}>
-//               <span>Contact</span>
-//               <img src={Contact} alt='contact'/>
-//             </Link>
-//             <div className={style.paraContainer}>
-//              <p>Make an Appointment</p>
-//              <img src={Appointment} alt='appointment'/>
-//             </div>
-//           </div>
-//         )}
-//         {/* <img src={MenuIcon} alt='menuIcon' onClick={handleMenuClick} /> */}
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Navbar;
-
-
-
-
-
-
-
-
-
-
 import React, { useState, useEffect } from 'react';
 import style from "../css/navbar.module.css";
 import { Link } from 'react-router-dom';
-import TimeSlot from './Form';
-import MenuIcon from '../image/menu.png';
 import Home from '../image/home.png';
 import About from '../image/about.png';
-import Services from '../image/services.png';
-import Blog from '../image/blog.png';
+// import Services from '../image/services.png';
+// import Blog from '../image/blog.png';
 import Contact from '../image/contact.png';
-import Appointment from '../image/appointment.png';
+// import Appointment from '../image/appointment.png';
 
 const Navbar = () => {
   const initialSlots = () => JSON.parse(localStorage.getItem('slots')) || Array(6).fill(false);
@@ -132,7 +55,7 @@ const Navbar = () => {
 
   return (
     <div className={style.navbar}>
-      <Link to="/" className={style.pageLink}>
+      <Link to="/" className={style.pageLinkDisplayBlock}>
         <p>
           <span>Aarogya Sanjeevani Clinic</span>
         </p>
@@ -187,6 +110,11 @@ const Navbar = () => {
         
         {/* <img src={MenuIcon} alt='menuIcon' onClick={handleMenuClick} /> */}
       </div>
+      <Link to="/" className={style.pageLinkDisplayNone}>
+        <p>
+          <span>Aarogya Sanjeevani Clinic</span>
+        </p>
+      </Link>
     </div>
   );
 };

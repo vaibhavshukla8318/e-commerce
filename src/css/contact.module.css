@@ -97,6 +97,7 @@ form input:focus{
 
 .contactInfo{
   width: calc(100% - 60%);
+  min-height: 40vh;
   display: flex;
   flex-direction: column;
   padding-top: 45px;
@@ -151,5 +152,11 @@ form input:focus{
   }
   .submitButton{
     margin-left: 0;
+  }
+}
+@media(max-width:780px){
+
+  .contact{
+    margin-top: 10vh;
   }
 }

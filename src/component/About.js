@@ -17,7 +17,7 @@ const Slider = ({ images }) => {
 
 
   return (
-    <div className="slider" style={{display:"flex", flexDirection:"row", width:"100vw", overflow:"auto"}}>
+    <div className={styles.slider}>
       {images.map((image, index) => (
         <div
           key={index}
@@ -84,14 +84,14 @@ const About = () => {
           <div class={styles.contactInfo}>
             <div>
               <h2>Contact Info:</h2>
-              <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-              <p>Mobile: <a href="tel:+91 1234567890">+1234567890</a></p>
+              <p>Email: <a href="mailto:sanjivshukla000@gmail.com">sanjivshukla000@gmail.com</a></p>
+              <p>Mobile: <a href="tel:+91 9889038280">+91 9889038280</a></p>
             </div>
             <div className={styles.sanjeevaniCircle}>
                 <div className={styles.sanjeevaniText}>Sanjeevani</div>
             </div>
           </div>
-          <div>
+          <div className={styles.copyRight}>
             Copyright © 2024 Sanjiv Shukla. All rights reserved.
           </div>
         </section>

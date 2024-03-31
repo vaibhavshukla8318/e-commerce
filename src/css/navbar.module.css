@@ -6,11 +6,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding:0 50px;
+  padding: 0 50px;
   z-index: 3;
 }
 .navbar p{
   max-width: 20vw;
+  /* width:100%; */
   overflow: auto;
   display: flex;
   justify-content: center;
@@ -108,7 +109,8 @@
 }
 
 
-.displayNone{
+.displayNone,
+.pageLinkDisplayNone{
   display: none;
 }
 
@@ -141,6 +143,26 @@
 }
 
 @media(max-width:780px){
+  .navbar{
+    min-height: 10vh;
+    padding: unset;
+    padding-top: 20px;
+  }
+  .pageLinkDisplayNone{
+    width: 100vw;
+    display: block;
+    background-color: #E9F9E7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  .navbar p{
+    width: 100%;
+  }
+  .pageLinkDisplayBlock{
+    display: none;
+  }
   .link{
     height: fit-content;
     width: fit-content;

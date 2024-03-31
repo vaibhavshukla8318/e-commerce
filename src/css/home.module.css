@@ -8,6 +8,16 @@ position: fixed;
 overflow-y: scroll;
 }
 
+.slider{
+  width: 98.5vw;
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.slider::-webkit-scrollbar{
+ display: none;
+}
 
 .section1{
   min-height: 50vh;
@@ -31,7 +41,7 @@ overflow-y: scroll;
 }
 
 .section2{
-  min-height: calc(100vh - 50vh);
+  min-height: 60vh;
   background-color:  rgb(61, 189, 96);
 }
 .section2 h2{
@@ -41,7 +51,7 @@ overflow-y: scroll;
 }
 
 .contactInfo{
-  padding-bottom: 30px;
+  padding-bottom: 0px;
   display: flex;
   justify-content: space-between;
 }
@@ -57,7 +67,7 @@ a{
 a:hover{
   color: red;
 }
-.copyright{
+.copyRight{
   width: 100%;
   text-align: center;
   margin-bottom: 70px;
@@ -88,5 +98,11 @@ a:hover{
 @media(max-width:500px){
   .section1 div{
     width: 100%;
+  }
+}
+@media(max-width:780px){
+
+  .homePage{
+    margin-top: 10vh;
   }
 }
