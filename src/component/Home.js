@@ -65,7 +65,7 @@ const Home = () => {
 
           </div>
           <div className={style.copyRight}>
-            Copyright © 2024 Sanjiv Shukla. All rights reserved.
+            Copyright © 2024 Dr. Sanjiv Shukla. All rights reserved.
           </div>
         </section>
       </div>
