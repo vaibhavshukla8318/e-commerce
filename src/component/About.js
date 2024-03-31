@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import styles from '../css/about.module.css'; // Importing CSS module
 import Navbar  from './Navbar';
+import Logo from '../image/logo.png'
 
 const Slider = ({ images }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -88,7 +89,8 @@ const About = () => {
               <p>Mobile: <a href="tel:+91 9889038280">+91 9889038280</a></p>
             </div>
             <div className={styles.sanjeevaniCircle}>
-                <div className={styles.sanjeevaniText}>Sanjeevani</div>
+              {/* <div className={style.sanjeevaniText}></div> */}
+              <img src={Logo} alt='logo'/>
             </div>
           </div>
           <div className={styles.copyRight}>

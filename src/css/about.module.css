@@ -54,9 +54,13 @@ section{
 }
 .secondSection h2{
   margin-bottom: 30px;
-  color: #E9C909;
+  color: #e6004d;
   font-style: italic;
   width: 56%;
+}
+.secondSection ul li span{
+  color: rgb(112, 14, 14);
+  font-weight: 500;
 }
 .fourthSection h2{
   margin-bottom: 30px;
@@ -92,7 +96,7 @@ li span {
 }
 a{
   color: #fff;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 a:hover{
   color: red;
@@ -104,20 +108,23 @@ a:hover{
 }
 
 .sanjeevaniCircle {
-  width: 12vw;
-  height: 12vh; 
-  border-radius: 50%; 
+  width: 160px; /* Adjust size as needed */
+  height: 160px; /* Adjust size as needed */
+  border-radius: 50%; /* Makes it a circle */
+  /* border: 2px solid black;  */
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: rotate360 5s linear infinite; 
+  border: 1px solid #fff;
+  /* animation: rotate360 5s linear infinite;  */
+}
+.sanjeevaniCircle img{
+    animation: rotate360 5s linear infinite; 
+}
+.sanjeevaniCircle img:hover{
+  animation: unset;
 }
 
-.sanjeevaniText {
-  font-size: 1.2rem; 
-  font-weight: bold;
-  color: rgb(207, 63, 147);
-}
 .copyRight{
   text-align: center;
 }

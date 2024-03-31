@@ -18,6 +18,10 @@
   align-items: center;
   overflow: hidden;
 }
+.navbar p img{
+  height: 60px;
+  width: 60px;
+}
 .navbar p span{
   min-width: 400px;
   display: flex;
@@ -149,6 +153,7 @@
     padding: unset;
     padding-top: 8px;
   }
+  
   .rightContainer{
     padding-bottom:10px ;
   }

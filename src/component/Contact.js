@@ -39,7 +39,7 @@ const Contact = () => {
          <div className={style.contactImage}></div>
          <div className={style.contactDetails}>
            <div className={style.formContainer}>
-             <h3>Get in Touch</h3>
+             <h3>Share Your Health Issues</h3>
              <form className='form' onSubmit={(e) => Submit(e)}>
                <textarea placeholder='Enter  Message' name="Message" required></textarea>
                <div>
@@ -47,7 +47,7 @@ const Contact = () => {
                 name="Name" placeholder='Enter Your Name' required/>
                 <input type='email' name="Email" placeholder='Email' required/>
               </div>
-              <input type='text' name="Subject" placeholder='Enter Subject' required/>
+              <input type='text' name="Subject" placeholder='Enter Subject'/>
               <div>
                 <input type='number' name='Number' placeholder='Enter Number' required/>
                 <input type="submit" value="Submit" className={style.submitButton} />
@@ -58,8 +58,8 @@ const Contact = () => {
             <div>
               <img src={phone}/>
               <div>
-                <a href='tel:+91 9889038280'>+91 9889038280</a>
-                <p>Sat and Sun 12am to 4pm</p>
+                <a href='tel:+91 9889038280'>+91 9889038280 <small>whatsapp</small></a>
+                <p>Sun 12 PM to 4 PM</p>
               </div>
             </div>
             <div>

@@ -75,29 +75,34 @@ a:hover{
 
 @keyframes rotate360 {
   0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  100% { transform: rotate(-360deg); }
 }
 
 .sanjeevaniCircle {
-  width: 12vw; /* Adjust size as needed */
-  height: 12vh; /* Adjust size as needed */
+  width: 160px; /* Adjust size as needed */
+  height: 160px; /* Adjust size as needed */
   border-radius: 50%; /* Makes it a circle */
   /* border: 2px solid black;  */
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: rotate360 5s linear infinite; /* Adjust animation duration as needed */
+  border: 1px solid #fff;
+  /* animation: rotate360 5s linear infinite;  */
+}
+.sanjeevaniCircle img{
+    animation: rotate360 5s linear infinite; 
+}
+.sanjeevaniCircle img:hover{
+  animation: unset;
 }
 
-.sanjeevaniText {
-  font-size: 1.2rem; /* Adjust font size as needed */
-  font-weight: bold;
-  color: rgb(207, 63, 147); /* Text color */
-}
 
 @media(max-width:500px){
   .section1 div{
     width: 100%;
+  }
+  .sanjeevaniCircle{
+    display: none;
   }
 }
 @media(max-width:780px){

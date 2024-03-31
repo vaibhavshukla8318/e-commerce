@@ -104,6 +104,19 @@ form input:focus{
   padding-left: 40px;
   /* padding-bottom: 200px; */
 }
+a small{
+  display: none;
+  font-size: 0.8rem;
+  /* color: gray!important; */
+  color: #fff;
+}
+
+.contactInfo a:hover>small{
+  display: inline-block;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
 .contactInfo>div{
   display: flex;
   align-items: center;

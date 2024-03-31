@@ -6,6 +6,7 @@ import About from '../image/about.png';
 // import Services from '../image/services.png';
 // import Blog from '../image/blog.png';
 import Contact from '../image/contact.png';
+import Logo from '../image/logo.png'
 // import Appointment from '../image/appointment.png';
 
 const Navbar = () => {
@@ -57,7 +58,10 @@ const Navbar = () => {
     <div className={style.navbar}>
       <Link to="/" className={style.pageLinkDisplayBlock}>
         <p>
-          <span>Aarogya Sanjeevani Clinic</span>
+          <span>
+            Aarogya Sanjeevani Clinic
+            <img src={Logo} alt='logo'/>
+          </span>
         </p>
       </Link>
       <div className={style.rightContainer}>
@@ -112,7 +116,10 @@ const Navbar = () => {
       </div>
       <Link to="/" className={style.pageLinkDisplayNone}>
         <p>
-          <span>Aarogya Sanjeevani Clinic</span>
+          <span>
+            Aarogya Sanjeevani Clinic
+            <img src={Logo} alt='logo'/>
+          </span>
         </p>
       </Link>
     </div>
