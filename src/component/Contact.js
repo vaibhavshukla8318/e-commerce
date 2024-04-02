@@ -4,6 +4,7 @@ import Navbar from './Navbar'
 import Footer from './Footer'
 import phone from '../image/phone.png'
 import email from '../image/email.png'
+import Whatsapp from '../image/whatsapp.png';
 
 const Contact = () => {
   function Submit(e) {
@@ -58,7 +59,7 @@ const Contact = () => {
             <div className={style.contactInfo}>
                 <h3>Contact me via WhatsApp.</h3>
                 <div>
-                  <img src={phone}/>
+                  <img src={Whatsapp}/>
                   <div>
                     <a href='https://wa.me/919889038280'>+91 9889038280 <small>whatsapp</small></a>
                     <p>Sun 12 PM to 4 PM</p>

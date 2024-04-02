@@ -135,14 +135,14 @@ a small{
   gap: 10px;
 }
 .contactInfo div img{
-  height: 35px;
-  width: 35px;
+  height: 30px;
+  width: 30px;
 }
 .contactInfo div div{
   display: flex;
   flex-direction: column;
   gap:10px;
-  padding-top: 30px;
+  padding-top: 24px;
 }
 .contactInfo div div p{
   color: rgb(224, 210, 210);
