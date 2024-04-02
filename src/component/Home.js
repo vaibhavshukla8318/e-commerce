@@ -137,7 +137,7 @@ const Home = () => {
               </p>
               <p>        
                  <img src={Location} alt='location'/>
-                <a href="">Near Square IIIT, Jhalwa, Prayagraj, Uttar Pradesh</a>
+                <a href="" className={style.anchor}>Near IIIT Square, Jhalwa, Prayagraj, Uttar Pradesh</a>
               </p>
             </div>
             <div>

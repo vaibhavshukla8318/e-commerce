@@ -204,11 +204,13 @@ a:hover{
     padding-bottom: 20px;
   }
   a{
-    padding-top: 17px;
     line-height: 1.5rem;
     white-space: wrap;
     color: #fff;
     transition: all 0.3s ease-in-out;
+  }
+  .anchor{
+    padding-top: 17px;
   }
   .sanjeevaniCircle{
     display: none;
