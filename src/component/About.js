@@ -101,7 +101,7 @@ const About = () => {
         <section className={styles.firstSection}>
           <h2 className={styles.aboutTitle}>About Electrohomeopathy</h2>
           <p className={styles.aboutText}>
-          <span className={styles.electrohomeopathy}>Electrohomeopathy</span> was devised by Count Cesare Mattei (1809–1896) in the latter part of the 19th Century. Mattei, a nobleman living in a castle in the vicinity of Bologna studied natural science, anatomy, physiology, pathology, Chemistry and botany. He ultimately focused on the supposed therapeutic power of electricity (Red, Blue,Green) in botanical extract.
+          <span className={styles.electrohomeopathy}>Electrohomeopathy</span> was devised by Count Cesare Mattei (1809–1896) in the latter part of the 19th Century. Mattei, a nobleman living in a castle in the vicinity of Bologna studied natural science, anatomy, physiology, pathology, Chemistry and botany. He ultimately focused on the supposed therapeutic power of electricity (Organic medicines and Electricities) in botanical extract.
           </p>
           <p className={styles.aboutText}>
           According to Mattei’s own ideas however, every, disease originates in the change of blood or of the lymphatic system or both and remadies can therefore be mainly divided into two broad categories groups to be used in response to the dominant affected system. Mattei wrote that having obtained plant extracts, he was able to determine in the liquid vegetable electricity.
@@ -113,7 +113,7 @@ const About = () => {
         <section className={styles.secondSection}>
           <h2>Principles of Electrohomeopathy:</h2>
           <ul>
-            <li><span>Vital Force Balance:</span> <span className={styles.electrohomeopathy}>Electrohomeopathy</span> operates on the principle that the body possesses a vital force or energy, which, when imbalanced, leads to disease. The remedies used in <span className={styles.electrohomeopathy}>Electrohomeopathy</span> are believed to restore this vital force balance, promoting the body's ability to heal itself.
+            <li><span>OD Force Balance:</span> <span className={styles.electrohomeopathy}>Electrohomeopathy</span> operates on the principle that the body possesses a OD force or energy, which, when imbalanced, leads to disease. The remedies used in <span className={styles.electrohomeopathy}>Electrohomeopathy</span> are believed to restore this OD force balance, promoting the body's ability to heal itself.
             </li>
             <li><span>Individualized Treatment:</span> Unlike homeopathy, <span className={styles.electrohomeopathy}>Electrohomeopathy</span> emphasizes individualized treatment based on the patient's unique symptoms, constitution, and overall health status. Remedies are selected to address the underlying causes of illness rather than just treating the symptoms.
             </li>
