@@ -137,7 +137,7 @@ const Home = () => {
             </div>
             <div>
               <h2>Social Media:</h2>
-              <a href=''><img src={Facebook} alt='fb'/></a>
+              <a href='https://www.facebook.com/Dr.Sanjivshukla?mibextid=kFxxJD'><img src={Facebook} alt='fb'/></a>
             </div> 
             <div className={style.sanjeevaniCircle}>
               {/* <div className={style.sanjeevaniText}></div> */}
