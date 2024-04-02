@@ -1,6 +1,7 @@
 import React from 'react'
 import style from '../css/contact.module.css'
 import Navbar from './Navbar'
+import Footer from './Footer'
 import phone from '../image/phone.png'
 import email from '../image/email.png'
 
@@ -10,7 +11,7 @@ const Contact = () => {
     const formEle = document.querySelector("form");
     const formDatab = new FormData(formEle);
     fetch(
-      "https://script.google.com/macros/s/AKfycbwLZwq80PSchwJZLafYu7PdGpbb3xAVkHWKksuYyOoal-qTkec1rROl51qZ0h8JC2_e/exec",
+      "https://script.google.com/macros/s/AKfycby5oxuFTDXRcunEV7Q3296z1GlMnyjq-R07uXRa6defXjPpwRhs03_VSsk5US8Lnkcd4g/exec",
       {
         method: "POST",
         body: formDatab
@@ -35,43 +36,46 @@ const Contact = () => {
   return (
     <>
         <Navbar/>
-       <div className={style.contact}>
-         <div className={style.contactImage}></div>
-         <div className={style.contactDetails}>
-           <div className={style.formContainer}>
-             <h3>Share Your Health Issues</h3>
-             <form className='form' onSubmit={(e) => Submit(e)}>
-               <textarea placeholder='Enter  Message' name="Message" required></textarea>
-               <div>
-                 <input type='text'
-                name="Name" placeholder='Enter Your Name' required/>
-                <input type='email' name="Email" placeholder='Email' required/>
-              </div>
-              <input type='text' name="Subject" placeholder='Enter Subject'/>
-              <div>
-                <input type='number' name='Number' placeholder='Enter Number' required/>
-                <input type="submit" value="Submit" className={style.submitButton} />
-              </div>
-            </form>
-          </div>
-          <div className={style.contactInfo}>
-            <div>
-              <img src={phone}/>
-              <div>
-                <a href='tel:+91 9889038280'>+91 9889038280 <small>whatsapp</small></a>
-                <p>Sun 12 PM to 4 PM</p>
-              </div>
+        <div className={style.contact}>
+          <div className={style.contactImage}></div>
+          <div className={style.contactDetails}>
+            <div className={style.formContainer}>
+              <h3>Share Your Health Issues Here👇</h3>
+              <form className='form' onSubmit={(e) => Submit(e)}>
+                <textarea placeholder='Enter  Message' name="Message" required></textarea>
+                <div>
+                  <input type='text'
+                  name="Name" placeholder='Your Name' required/>
+                  <input type='email' name="Email" placeholder='Your Email' required/>
+                </div>
+                <input type='text' name="Subject" placeholder='Symptom'/>
+                <div>
+                  <input type='number' name='Number' placeholder='Contact Number' required/>
+                  <input type="submit" value="Submit" className={style.submitButton} />
+                </div>
+              </form>
             </div>
-            <div>
-              <img src={email}/>
-              <div>
-                <a href='mailto:sanjivshukla000@gmail.com'>sanjivshukla000@gmail.com</a>
-                <p>Send us your query anytime!</p>
-              </div>
+            <div className={style.contactInfo}>
+                <h3>Contact me via WhatsApp.</h3>
+                <div>
+                  <img src={phone}/>
+                  <div>
+                    <a href='https://wa.me/919889038280'>+91 9889038280 <small>whatsapp</small></a>
+                    <p>Sun 12 PM to 4 PM</p>
+                  </div>
+                </div>
+                <div>
+                  <img src={email}/>
+                  <div>
+                    <a href='mailto:sanjivshukla000@gmail.com'>sanjivshukla000@gmail.com</a>
+                    <p>Send us your query anytime!</p>
+                  </div>
+                </div>
             </div>
           </div>
+          
         </div>
-      </div>
+        <Footer/>
     </>
   )
 }

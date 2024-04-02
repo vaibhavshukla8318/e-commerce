@@ -1,10 +1,13 @@
 .contact{
-  position: fixed;
-  height: calc(100vh - 15vh);
+  /* position: fixed; */
+  /* height: calc(100vh - 15vh); */
+  min-height: 100vh;
   width: 100vw;
   align-items: center;
   background-color: #657647;
-  margin-top: 15vh;
+  padding-top: 15vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 .contactImage{
   position: absolute;
@@ -15,14 +18,17 @@
   background-repeat: no-repeat;
   background-size: cover;
   filter: brightness(50%);
+  overflow: hidden;
 }
 .contactDetails{
-  position: absolute;
+  /* position: absolute; */
   display: flex;
-  padding: 30px 50px;
-  height: 100%;
+  padding: 0px 50px;
+  /* max-height: fit-content; */
   width: 100%;
   color: #fff;
+  overflow: hidden;
+  /* background-color: red; */
 }
 .formContainer{
   width: 60%;
@@ -97,12 +103,17 @@ form input:focus{
 
 .contactInfo{
   width: calc(100% - 60%);
-  min-height: 40vh;
+  /* min-height: 40vh; */
   display: flex;
   flex-direction: column;
-  padding-top: 45px;
+  padding-top: 60px;
   padding-left: 40px;
+  z-index: 2;
   /* padding-bottom: 200px; */
+}
+.contactInfo h3{
+  color:bisque ;
+  font-weight: 600;
 }
 a small{
   display: none;
@@ -138,10 +149,7 @@ a small{
 }
 
 @media(max-width:700px){
-  .contact{
-    overflow-y: auto;
-    overflow-x: hidden;
-  }
+  
   .contactDetails{
     padding: 50px 10px;
     flex-direction: column;
@@ -151,7 +159,6 @@ a small{
   }
   .contactInfo{
     width: 100%;
-    padding-bottom: 50px;
   }
   textarea{
     width: 100%;
@@ -169,7 +176,9 @@ a small{
 }
 @media(max-width:780px){
 
-  .contact{
-    margin-top: 10vh;
+  .formContainer h3{
+    width: 100%;
+    text-align: center;
+    white-space: wrap;
   }
 }
