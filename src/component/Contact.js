@@ -6,6 +6,7 @@ import email from '../image/email.png'
 import Whatsapp from '../image/whatsapp.png';
 import Location from '../image/location.png';
 
+
 const Contact = () => {
   function Submit(e) {
     e.preventDefault(); // Prevent default form submission behavior

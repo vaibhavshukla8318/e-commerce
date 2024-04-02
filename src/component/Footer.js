@@ -1,12 +1,13 @@
 import React from 'react'
 import style from '../css/footer.module.css'
+import DoctorImage1 from '../image/doctorImage.jpg'
 
 const Footer = () => {
   return (
     <div className={style.doctorCardContainer}>
     <div className={style.doctorCard}>
       <div className={style.doctorImage}>
-        <img src='https://aiiems.com/uploads/646757dcc081c.jpg'/>
+        <img src={DoctorImage1}/>
       </div>
       <div className={style.doctorDetails}>
           <h2>Dr. Sanjiv Shukla</h2>
