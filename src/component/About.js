@@ -5,6 +5,7 @@ import Logo from '../image/logo.png';
 import Email from '../image/email.png';
 import Whatsapp from '../image/whatsapp.png';
 import Facebook from '../image/facebook.png';
+import Location from '../image/location.png';
 import Image1 from '../image/image1.png'
 import Image2 from '../image/image2.png'
 import Image3 from '../image/image3.png'
@@ -84,9 +85,9 @@ const Slider = ({ images }) => {
 const images = [
   Image1,
   Image2,
-  'https://www.ehmc.co.in/images/banner1.jpg',
-  'https://www.ehmc.co.in/images/banner2.jpg',
-  
+  Image3,
+  Image4,
+  Image5
   // Add more image URLs as needed
 ];
 
@@ -144,6 +145,10 @@ const About = () => {
               <p>        
                  <img src={Whatsapp} alt='whatsapp'/>
                 <a href="https://wa.me/919889038280">+91 9889038280</a>
+              </p>
+              <p>        
+                 <img src={Location} alt='location'/>
+                <a href="">Near Square IIIT, Jhalwa, Prayagraj, Uttar Pradesh</a>
               </p>
             </div>
             <div>

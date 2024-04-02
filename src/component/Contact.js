@@ -2,9 +2,9 @@ import React from 'react'
 import style from '../css/contact.module.css'
 import Navbar from './Navbar'
 import Footer from './Footer'
-import phone from '../image/phone.png'
 import email from '../image/email.png'
 import Whatsapp from '../image/whatsapp.png';
+import Location from '../image/location.png';
 
 const Contact = () => {
   function Submit(e) {
@@ -70,6 +70,12 @@ const Contact = () => {
                   <div>
                     <a href='mailto:sanjivshukla000@gmail.com'>sanjivshukla000@gmail.com</a>
                     <p>Send us your query anytime!</p>
+                  </div>
+                </div>
+                <div>
+                  <img src={Location} style={{marginTop:"27px"}} alt='location'/>
+                  <div>
+                    <a href='' >Near Square IIIT, Jhalwa, Prayagraj, Uttar Pradesh</a>
                   </div>
                 </div>
             </div>
