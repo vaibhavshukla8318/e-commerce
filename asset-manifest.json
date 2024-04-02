@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/homeopathy_website/static/css/main.b95c71b3.css",
+    "main.css": "/homeopathy_website/static/css/main.9cb34237.css",
     "main.js": "/homeopathy_website/static/js/main.9cfff311.js",
     "static/media/image3.png": "/homeopathy_website/static/media/image3.8cffb4cecd458163ccfe.png",
     "static/media/image5.png": "/homeopathy_website/static/media/image5.8cffb4cecd458163ccfe.png",
@@ -10,11 +10,11 @@
     "static/media/logo.png": "/homeopathy_website/static/media/logo.159b3c8080174fb8d0f9.png",
     "static/media/about.png": "/homeopathy_website/static/media/about.df5172754eb4e8e0472f.png",
     "index.html": "/homeopathy_website/index.html",
-    "main.b95c71b3.css.map": "/homeopathy_website/static/css/main.b95c71b3.css.map",
+    "main.9cb34237.css.map": "/homeopathy_website/static/css/main.9cb34237.css.map",
     "main.9cfff311.js.map": "/homeopathy_website/static/js/main.9cfff311.js.map"
   },
   "entrypoints": [
-    "static/css/main.b95c71b3.css",
+    "static/css/main.9cb34237.css",
     "static/js/main.9cfff311.js"
   ]
 }
