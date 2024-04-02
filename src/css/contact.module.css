@@ -181,4 +181,11 @@ a small{
     text-align: center;
     white-space: wrap;
   }
+  a{
+    padding-top: 17px;
+    line-height: 1.5rem;
+    white-space: wrap;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+  }
 }

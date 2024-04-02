@@ -203,6 +203,13 @@ a:hover{
     border-bottom: 2px solid gray;
     padding-bottom: 20px;
   }
+  a{
+    padding-top: 17px;
+    line-height: 1.5rem;
+    white-space: wrap;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+  }
   .sanjeevaniCircle{
     display: none;
   }

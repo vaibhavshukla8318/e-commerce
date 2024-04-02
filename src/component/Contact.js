@@ -75,7 +75,7 @@ const Contact = () => {
                 <div>
                   <img src={Location} style={{marginTop:"27px"}} alt='location'/>
                   <div>
-                    <a href='' >Near Square IIIT, Jhalwa, Prayagraj, Uttar Pradesh</a>
+                    <a href=''>Near Square IIIT, Jhalwa, Prayagraj, Uttar Pradesh</a>
                   </div>
                 </div>
             </div>
